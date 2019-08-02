@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+h1{
+text-align: center
+}
+nav {
+    background-color: blue;
+    width:100%;
+}
+
+.main-elements-container {
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    flex-direction: row;
+    background-color: white; 
+    padding-left:10px;
+    padding-top:10px;  
+}
+.element{
+width: 100%;
+text-align: center;
+}
+.element img{
+    width:100%;
+    height: auto;
+}
+
+
+@media (min-width: 768px)  {
+
+
+    .main-elements-container {
+        display:flex;
+        flex-wrap: wrap;
+        max-width:1140px;
+        margin:auto;
+        flex-direction: row;   
+    }
+  
+    .element{
+        width: 23%;
+        margin-right:10px;
+        margin-left:10px;
+
+    }
+    
+  }
